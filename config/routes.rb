@@ -1,11 +1,15 @@
 Bloccit::Application.routes.draw do
-  get 'welcome/index'
-  get 'welcome/about'
+  
+    resources :posts
 
-    root to: 'welcome#index'
+    get 'about' => 'welcome#about'
+
+  root to: 'welcome#index'
+
+end
 
 
-  # The priority is based upon order of creation: first created -> highest priority.
+# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
@@ -59,4 +63,3 @@ Bloccit::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
