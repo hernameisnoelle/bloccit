@@ -14,3 +14,6 @@ popost# See https://help.github.com/articles/ignoring-files for more about ignor
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore application configuration
+/config/application.yml
