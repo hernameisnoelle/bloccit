@@ -41,7 +41,7 @@ def create
        render :edit
      end
    end
-
+   
    private
 
       def topic_params
